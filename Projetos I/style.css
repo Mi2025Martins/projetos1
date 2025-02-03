@@ -1,0 +1,171 @@
+/* Resetar o estilo básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/* Cabeçalho do menu */
+header{
+    display: flex;  
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 40px; 
+    background-color: #ffffff; 
+    color: #000000; 
+    border-radius: 20px;
+    border-radius: 10px;
+}
+
+header .logo img{
+    display: block;
+    max-width: 100%;
+}
+header .logo{
+    align-items: center;
+    background-color: #ffffff;
+    width: 80px;
+    height: auto;
+}
+
+/* Estilo da barra de navegação */
+.menu {
+    align-items: center;
+    justify-content: center;
+    padding: 0 150px;
+    display: flex;
+    gap: 60px;   
+    border-radius: 10px;
+}
+nav ul.menu{
+    list-style: none; 
+    display: flex; 
+    gap: 60px; 
+    transition: 0.3s;
+}
+
+nav ul.menu li a{
+    text-decoration: none; 
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* transição de cor quando o mouse passa em cima das palavras do menu */
+nav ul.menu li a:hover{
+    color:#9e0000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* Início */
+.inicio{
+    /* fundo */
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px; /* tamanho do container "inicio" */
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.parte_esquerda{
+    max-width: 60%; 
+    color: white;
+    padding: 50px;
+    border-radius: 25px;
+    position: relative;
+}
+.parte_esquerda h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.parte_esquerda h3{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.parte_esquerda a{
+    text-decoration: none; 
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.parte_direita{
+    display: flex;
+    width: 50%;
+    height: 50%; /* Faz ocupar a tela inteira, pode ajustar */
+}
+
+.parte_direita img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+/* Músicas mais famosas */
+.musicas_mais_famosas{
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+.musicas_mais_famosas h2{
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 0px;
+    padding: 0px 20px;
+    text-align: justify;
+}
+.musicas_mais_famosas .opções{
+    flex-wrap: wrap;
+    gap: 20px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px; 
+    position: relative;
+    }
+
+.musicas_mais_famosas .musica{
+    width: 90%;
+    max-width: 300px;
+    display: inline-block;
+    background-color: #330000;
+    border-radius: 20px;
+    margin: 10px;
+    height: 350px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+.musicas_mais_famosas .musica img{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
+.musicas_mais_famosas .musica p{
+    font-size: 20px;
+    color:#ffffff;
+}
+.musicas_mais_famosas .musica:hover{
+    transform: scale(1.05);
+}
+.musicas_mais_famosas .musica a{
+    text-decoration: none; 
+    color: #ffffff;
+    font-size: 15px;
+}
