@@ -1,2 +1,2 @@
 #  Componentes:
-Ana Laura dos Santos Franco, Michelle Martins, Maria Gabriella Aparecida
+Ana Laura dos Santos Franco e Michelle Martins.
